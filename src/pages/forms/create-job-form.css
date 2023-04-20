@@ -1,0 +1,13 @@
+.form-title {
+    background-color: #1b9480;
+    border-radius: 5px 5px 0px 0px;
+    max-height: 45px;
+    color: white;
+    padding: 8px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.form-container {
+    padding: 8px;
+}

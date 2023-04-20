@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { FC, useEffect, useState } from 'react';
-import { Button, Table, Title, Overlay }from'../components';
+import { Button, Table, Title, Overlay } from '../components';
+import { CreateJobForm } from './forms';
 
 import './jobs.css';
 
@@ -28,17 +29,18 @@ const Jobs: FC = () => {
 
     return (
         <div className='jobs-container'>
-            <div className='jobs-title-row'>
-                <Title>Jobs</Title>
-                <Button onClick={handleCreateClick}>
-                    Create Job
-                </Button>
+            <Title>Jobs</Title>
+            <div className='layout'>
+                <div className='job-table'>
+                    <Table
+                        columns={jobColumns}
+                        data={jobs}
+                    />
+                </div>
+                <div className='job-form'>
+                    <CreateJobForm />
+                </div>
             </div>
-            <Table
-                columns={jobColumns}
-                data={jobs}
-            />
-            { showCreateForm ? <Overlay /> : null }
         </div>
     )
 };

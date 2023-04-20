@@ -2,7 +2,15 @@
     padding: 25px;
 }
 
-.jobs-title-row {
+.layout {
     display: flex;
-    justify-content: space-between;
+    gap: 40px;
+}
+
+.job-table {
+    width: 70%;
+}
+
+.job-form {
+    width: 30%;
 }
