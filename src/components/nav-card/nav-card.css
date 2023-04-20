@@ -1,0 +1,22 @@
+.nav-card {
+    height: 200px;
+    width: 200px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow:  14px 14px 18px -6px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #666666;
+    font-size: 20px;
+}
+
+.nav-card:hover {
+    transform: scale(1.025);
+}

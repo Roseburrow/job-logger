@@ -1,0 +1,10 @@
+.table-header-row {
+    background: #1b9480;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
+
+.header-cell {
+    padding: 12px 15px;
+}

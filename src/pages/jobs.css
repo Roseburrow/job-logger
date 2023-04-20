@@ -1,0 +1,8 @@
+.jobs-container {
+    padding: 25px;
+}
+
+.jobs-title-row {
+    display: flex;
+    justify-content: space-between;
+}
